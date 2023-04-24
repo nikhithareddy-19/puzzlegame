@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
 
+import React from "react";
+import { Routes, Route, Router } from "react-router-dom";
+import Welcome from "./screens/Welcome/welcome.js";
+import Login from "./screens/Login/login.js";
+import Hello from "./screens/Hello/hello.js";
+import Intro from "./screens/Intro/intro.js";
+import Puzzle from "./screens/Puzzle/puzzle.js";
+import Dora from "./screens/Dora/dora.js";
+import Robo from "./screens/Robo/robo.js";
+import Congo from "./screens/Congo/congo.js";
+import Admin from "./screens/admin/admin.js";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path="/" exact element={<Welcome />}></Route>
+      <Route path="Login" element={<Login />}></Route>
+      <Route path="Hello" element={<Hello />}></Route>
+      <Route path="Intro" element={<Intro />}></Route>
+      <Route path="Puzzle" element={<Puzzle />}></Route>
+      <Route path="Dora" element={<Dora />}></Route>
+      <Route path="Congo" element={<Congo />}></Route>
+      <Route path="Robo" element={<Robo />}></Route>
+      <Route path="RESTART" element={<Welcome />}></Route>
+      <Route path="admin" element={<Admin />}></Route>
+    </Routes>
+
   );
 }
 

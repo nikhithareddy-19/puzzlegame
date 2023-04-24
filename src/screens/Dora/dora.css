@@ -1,0 +1,32 @@
+
+.puzzle-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+  }
+  
+  .puzzle-tile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    font-size: 48px;
+    font-weight: bold;
+    border: 2px solid black;
+    cursor: pointer;
+  }
+  
+  .puzzle-tile.correct {
+    background-color: green;
+    color: white;
+  }
+  
+  .puzzle-tile.incorrect {
+    background-color: red;
+    color: white;
+  }

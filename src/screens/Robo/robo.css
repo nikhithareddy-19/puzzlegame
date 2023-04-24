@@ -1,0 +1,30 @@
+.Robo{
+    position: relative;
+    width: 100%;
+    max-width: 2000px;
+  }
+  
+  .Robo img {
+    width: 100%;
+    height: 1500;
+  }
+  
+  .Robo .btn {
+    position: absolute;
+    top: 75%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgb(173, 61, 61);
+    color: black;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .Robo .btn:hover {
+    background-color: rgb(173, 61, 61);
+  }
